@@ -8,7 +8,7 @@ fi
 
 function ttl_param {
   if [ -n "$FRONTEND_TTL_SECS" ]; then
-    echo "--ttl $FRONTEND_TTL_SECS"
+    echo "--ttl \"${FRONTEND_TTL_SECS}s\""
   fi
 }
 
