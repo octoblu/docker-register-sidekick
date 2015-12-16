@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if [ -z "$BACKEND_ID" -o -z "$SERVER_ID" -o -z "$URL" -o -z "$VULCAN_URL" -o -z "$TIMEOUT_SECS" ]; then
-  echo "register-healthcheck requires the following variables:"
-  echo '  $BACKEND_ID $SERVER_ID $URL $VULCAN_URL $TIMEOUT_SECS'
+  echo "register-healthcheck requires the following variables:" >&2
+  echo '  $BACKEND_ID $SERVER_ID $URL $VULCAN_URL $TIMEOUT_SECS' >&2
   exit 1
 fi
 
